@@ -2,16 +2,15 @@ import random
 
 # Make a random number
 number = random.randrange(0,500)
-print(number)
 # This will generate a number between 0 and 500
 answer_count = 1
+# Next line is explaining the game and asking for a number to initialize
 answer = int(input("I have generated a number between 0 and 500, lets try to guess it! Type a number here and i will tell you if its higher or lower, lets start! "))
-
+# While loop to check the value
 while answer != number:
     answer_count += 1
     if answer > number:
         answer = int(input(("Lower ")))
-        continue
     else:
         answer = int(input(("Higher ")))
 if answer == number:
